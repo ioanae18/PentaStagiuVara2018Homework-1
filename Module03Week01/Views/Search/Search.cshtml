@@ -1,0 +1,10 @@
+﻿@model Module03Week01.Models.SearchViewModel
+
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(x => x.Query)
+    @Html.EditorFor(x => x.Query)
+    @Html.ValidationMessageFor(x => x.Query)
+    <button type="submit">Search</button>
+}
